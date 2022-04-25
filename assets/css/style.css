@@ -7,8 +7,15 @@
     color: black;
     font-family: Helvetica, Arial, sans-serif;
   }
+  img {
+    max-width: 100%;
+  }
+  p {
+    font-size: 25px;
+    color: black;
+    padding: 10px;
+  }
     /* HEADER / NAV BAR STYLES START */
-
     header {
       padding: 20px 35px;
       background-color: white;
@@ -25,11 +32,9 @@
       z-index: 9999;
     }
     header h1 {
-      font-weight: bold;
       margin: 0;
       font-size: 36px;
       color: white;
-      text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     }
     header a {
       text-decoration: none;
@@ -42,15 +47,13 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      align-items: center;
+      align-items: flex-end;
       list-style: none;
-      text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     }
     header nav ul li a {
       padding: 10px 15px;
       font-weight: lighter;
       font-size: 1.55vw;
-      text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     }
     header nav ul li a:hover {
       background: white;
@@ -70,85 +73,85 @@
   align-items: flex-start;
   background-attachment: fixed;
   background-position: 80%;
-  border: solid 3px black;
 }
 .hero-cta h2 {
   padding: 0 50px 0 0;
   font-style: italic;
   font-size: 35px;
   color: black;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 /* HERO STYLES END */
 
-
-/* START WORK SECTION*/
-
-.image-box{
-  border-style: solid 2px red;
-  margin: 10px;
-  padding: 10px;
-  flex: 1;
-}
-.flex-container {
+/* START CATEGORIES SECTION*/
+  /* START MAIN COMPONENTS*/
+  .flex-container {
+    background: white;
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+  }
+  .category-flexbox {
+    background: #CFCFCE;
+    border-radius: 5px;
+    flex: 1;
+    padding: 10px;
+  }
+  .category-flexbox h3 {
+    padding: 0 0 0 25px;
+    font-size: 30px;
+  }
+  .content-flexbox {
   background: white;
-  display: flex;
-  border: 1px solid grey;
-  margin: 10px;
-}
-.projectrow-container {
-  background: olive;
-  display: flex;
-  border: 1px solid black;
-  margin: 10px;
-  padding: 10px;
-}
-.category-flexbox {
-  background: gray;
-  border-right: solid 3px orangered;
-  flex: 1;
-  padding: 10px;
-}
-.category-flexbox h3 {
-  padding: 0 0 0 25px;
-}
-.content-flexbox {
-  background: aquamarine;
   flex: 5;
-  border: solid 2px black;
   padding: 10px;
   margin: 10px;
+  font-size: 20px;
+  
 }
+  /* WORK SECTION STYLES START*/
 .work-flex-container {
   background: white;
   flex-direction: column;
-  border: solid 2px black;
   padding: 10px;
   flex: 5;
+  
 }
-
+.projectrow-container {
+  background: white;
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+}
 .content-flexbox h4 {
   padding: 0 0 0 25px;
+  font-size: 25px;
+  font-weight: 150px;
 }
-.project-row {
-  display: flex;
-  flex-direction: row;
-  border: solid 3px orange;
+.project-image-style {
+  border: 1px solid grey;
+  border-radius: 1%;
+  box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.28);
 }
-.project-flexbox {
-  flex: 1;
-  border: solid 3px orange;
-}
-.project-columns {
-  display: flex;
-  flex-direction: column;
-}
+  /* WORK SECTION STYLES END*/
 
-/* END WORK SECTION */
+/* CONTACT ME SECTION */
+.contact-container {
+  background: white;
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+}
+.contact-box {
+  margin: 10px;
+  padding: 10px;
+  flex: 1;
+  text-align: center;
+}
+/* CONTACT ME SECTION END*/
 
     /* FOOTER STYLES START */
   footer {
-    background: rgb(188, 227, 227);
+    background-image: url('../images/footer-bg.jpeg');
     padding: 20px 35px;
     display: flex;
     justify-content: space-between;
@@ -156,8 +159,9 @@
     width: 100%;
   }
   footer h2 {
-    color: black;
+    color: white;
     font-size: 20px;
+    font-weight: 150;
     margin: 0;
   }
   footer div {
@@ -165,3 +169,8 @@
     text-align: right;
   }
   /* END FOOTER STYLES */
+
+  /* RESUME PAGE */
+  .hero, .resume-page-title h2{
+    text-align: center;
+  }
