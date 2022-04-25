@@ -186,3 +186,13 @@
     text-align: right;
   }
   /* END FOOTER STYLES */
+
+    /* RESUME PAGE STYLES */
+
+    .resume-style {
+      padding: 10px;
+      height: 1500px;
+      width: auto;
+      border: 2px dotted grey;
+      margin: 20px;
+    }
