@@ -147,6 +147,12 @@
   flex: 1;
   text-align: center;
 }
+.headshot {
+  border-radius: 40%;
+  border: solid 3px black;
+  width: 100px;
+  height: auto;
+}
 /* CONTACT ME SECTION END*/
 
     /* FOOTER STYLES START */
@@ -169,8 +175,3 @@
     text-align: right;
   }
   /* END FOOTER STYLES */
-
-  /* RESUME PAGE */
-  .hero, .resume-page-title h2{
-    text-align: center;
-  }
