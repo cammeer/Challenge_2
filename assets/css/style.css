@@ -1,209 +1,239 @@
-                                * {
-                                    box-sizing: border-box;
-                                    margin: 0;
-                                    padding: 0;
-                                }
-                                
-                                body {
-                                    color: black;
-                                    font-family: Helvetica, Arial, sans-serif;
-                                }
-                                
-                                p {
-                                    font-size: 15px;
-                                    color: black;
-                                    padding: 10px;
-                                }
-                                
-                                img {
-                                    max-width: 100%;
-                                }
-                                /* HEADER / NAV BAR STYLES START */
-                                
-                                header {
-                                    padding: 20px 35px;
-                                    background-color: white;
-                                    display: flex;
-                                    justify-content: space-between;
-                                    flex-wrap: wrap;
-                                    position: sticky;
-                                    position: -webkit-sticky;
-                                    top: 0;
-                                    background-image: url('../images/hero-bg.jpeg');
-                                    background-size: cover;
-                                    background-attachment: fixed;
-                                    background-position: 80%;
-                                    z-index: 9999;
-                                }
-                                
-                                header h1 {
-                                    margin: 0;
-                                    font-size: 36px;
-                                    color: white;
-                                }
-                                
-                                header a {
-                                    text-decoration: none;
-                                    color: white;
-                                }
-                                
-                                header nav {
-                                    margin: 7px 0;
-                                }
-                                
-                                header nav ul {
-                                    display: flex;
-                                    flex-wrap: wrap;
-                                    justify-content: space-between;
-                                    align-items: flex-end;
-                                    list-style: none;
-                                }
-                                
-                                header nav ul li a {
-                                    padding: 10px 15px;
-                                    font-weight: lighter;
-                                    font-size: 1.55vw;
-                                }
-                                
-                                header nav ul li a:hover {
-                                    background: white;
-                                    color: black;
-                                    border-radius: 5px;
-                                    text-shadow: none;
-                                }
-                                /* HEADER / NAVBAR STYLES END */
-                                /* HERO STYLES START */
-                                
-                                .hero {
-                                    background-image: url('../images/hero-bg.jpg');
-                                    background-size: cover;
-                                    display: flex;
-                                    justify-content: right;
-                                    flex-wrap: wrap;
-                                    align-items: flex-start;
-                                    background-attachment: fixed;
-                                    background-position: 80%;
-                                }
-                                /* HERO STYLES END */
-                                /* START CATEGORIES SECTION*/
-                                /* START MAIN COMPONENTS*/
-                                
-                                .flex-container {
-                                    background: white;
-                                    display: flex;
-                                    margin: 10px;
-                                    padding: 10px;
-                                }
-                                
-                                .category-flexbox {
-                                    background: rgba(182, 182, 182, 0.481);
-                                    border-radius: 5px;
-                                    flex: 1;
-                                    padding: 10px;
-                                }
-                                
-                                .category-flexbox h3 {
-                                    padding: 0 0 0 25px;
-                                    font-size: 30px;
-                                }
-                                
-                                .content-flexbox {
-                                    background: white;
-                                    flex: 5;
-                                    font-size: 20px;
-                                    align-items: center;
-                                }
-                                /* WORK SECTION STYLES START*/
-                                
-                                .about-me {
-                                    font-size: 15px;
-                                }
-                                
-                                .work-flex-container {
-                                    background: white;
-                                    flex-direction: column;
-                                    padding: 10px;
-                                    flex: 5;
-                                }
-                                
-                                .projectrow-container {
-                                    background: white;
-                                    display: flex;
-                                }
-                                
-                                .content-flexbox h4 {
-                                    padding: 0 0 0 25px;
-                                    font-size: 25px;
-                                    font-weight: 150px;
-                                }
-                                
-                                .main-project-image-style {
-                                    border: 1px solid grey;
-                                    border-radius: 1%;
-                                    box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.28);
-                                    height: 500px;
-                                    width: auto;
-                                }
-                                
-                                .project-image-style {
-                                    border: 1px solid grey;
-                                    border-radius: 1%;
-                                    box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.28);
-                                    height: 300px;
-                                    width: auto;
-                                }
-                                /* WORK SECTION STYLES END*/
-                                /* CONTACT ME SECTION */
-                                
-                                th,
-                                td {
-                                    text-align: left;
-                                    padding: 5px;
-                                    flex-wrap: wrap;
-                                }
-                                
-                                .headshot-image-style {
-                                    height: 300px;
-                                    width: auto;
-                                }
-                                /* CONTACT ME SECTION END*/
-                                /* FOOTER STYLES START */
-                                
-                                footer {
-                                    background-image: url('../images/footer-bg.jpeg');
-                                    padding: 20px 35px;
-                                    display: flex;
-                                    justify-content: space-between;
-                                    flex-wrap: wrap;
-                                    width: 100%;
-                                }
-                                
-                                footer h2 {
-                                    color: white;
-                                    font-size: 20px;
-                                    font-weight: 150;
-                                    margin: 0;
-                                }
-                                
-                                footer div {
-                                    line-height: 1.5;
-                                    text-align: right;
-                                }
-                                /* END FOOTER STYLES */
-                                /* RESUME PAGE STYLES */
-                                
-                                .resume-style {
-                                    padding: 10px;
-                                    height: 1500px;
-                                    width: auto;
-                                    border: 2px dotted grey;
-                                    margin: 20px;
-                                }
-                                /* RESUME STYLES END */
-                                /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
-                                
-                                @media screen and (max-width: 575px) {
-                                    header nav ul li a {
-                                        font-size: 20px;
-                                    }
-                                }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: black;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+p {
+    font-size: 15px;
+    color: black;
+    padding: 10px;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* HEADER / NAV BAR STYLES START */
+
+header {
+    padding: 20px 35px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-image: url("../images/hero-bg.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    z-index: 9999;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+    color: white;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+}
+
+header nav ul li a:hover {
+    background: white;
+    color: black;
+    border-radius: 5px;
+    text-shadow: none;
+}
+
+
+/* HEADER / NAVBAR STYLES END */
+
+
+/* HERO STYLES START */
+
+.hero {
+    background-image: url("../images/hero-bg.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 80%;
+}
+
+
+/* HERO STYLES END */
+
+
+/* START CATEGORIES SECTION*/
+
+
+/* START MAIN COMPONENTS*/
+
+.flex-container {
+    background: white;
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+}
+
+.category-flexbox {
+    background: rgba(182, 182, 182, 0.481);
+    border-radius: 5px;
+    flex: 1;
+    padding: 10px;
+}
+
+.category-flexbox h3 {
+    padding: 0 0 0 25px;
+    font-size: 30px;
+}
+
+.content-flexbox {
+    background: white;
+    flex: 5;
+    font-size: 20px;
+    align-items: center;
+}
+
+
+/* WORK SECTION STYLES START*/
+
+.about-me {
+    font-size: 15px;
+}
+
+.work-flex-container {
+    background: white;
+    flex-direction: column;
+    padding: 10px;
+    flex: 5;
+}
+
+.projectrow-container {
+    background: white;
+    display: flex;
+}
+
+.content-flexbox h4 {
+    padding: 0 0 0 25px;
+    font-size: 25px;
+    font-weight: 150px;
+}
+
+.main-project-image-style {
+    border: 1px solid grey;
+    border-radius: 1%;
+    box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.28);
+    height: 500px;
+    width: auto;
+}
+
+.project-image-style {
+    border: 1px solid grey;
+    border-radius: 1%;
+    box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.28);
+    height: 300px;
+    width: auto;
+}
+
+
+/* WORK SECTION STYLES END*/
+
+
+/* CONTACT ME SECTION */
+
+th,
+td {
+    text-align: left;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
+.headshot-image-style {
+    height: 300px;
+    width: auto;
+}
+
+
+/* CONTACT ME SECTION END*/
+
+
+/* FOOTER STYLES START */
+
+footer {
+    background-image: url("../images/footer-bg.jpeg");
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+footer h2 {
+    color: white;
+    font-size: 20px;
+    font-weight: 150;
+    margin: 0;
+}
+
+footer div {
+    line-height: 1.5;
+    text-align: right;
+}
+
+
+/* END FOOTER STYLES */
+
+
+/* RESUME PAGE STYLES */
+
+.resume-style {
+    padding: 10px;
+    height: 1500px;
+    width: auto;
+    border: 2px dotted grey;
+    margin: 20px;
+}
+
+
+/* RESUME STYLES END */
+
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+
+@media screen and (max-width: 575px) {
+    header nav ul li a {
+        font-size: 20px;
+    }
+}
